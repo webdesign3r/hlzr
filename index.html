@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>Ferienhaus Holzer</title>
+
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link href="css/custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Helper Styles -->
+	<link href="css/loaders.css" rel="stylesheet">
+	<link href="css/swiper.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/nivo-lightbox.css" rel="stylesheet">
+	<link href="css/nivo_themes/default/default.css" rel="stylesheet">
+	<link href="css/bootstrap-datepicker.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/w3r.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+	<!-- 	<div class="loader loader-bg">
+		<div class="loader-inner ball-clip-rotate-pulse">
+			<div>asfnasofpasodasd</div>
+			<div>asfnasofpasodasd</div>
+		</div>
+	</div> -->
+
+	<!-- Main Navigation
+	================================================== -->
+	<nav class="navbar navbar-toggleable-md mb-4 top-bar navbar-static-top sps sps--abv">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">
+				<img src="../img/logo_white.png" id="logo">
+			</a>
+			<div class="collapse navbar-collapse" id="navbarCollapse1">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"> <a class="nav-link" href="#myCarousel">Start <span class="sr-only">(current)</span></a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#ueberuns">Über Uns</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="#dashaus">Das Haus</a> </li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Wohnungen
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#wohnungen">Übersicht</a>
+							<a class="dropdown-item" href="/wohnungen/details_01.html">Wohnung 1</a>
+							<a class="dropdown-item" href="/wohnungen/details_02.html">Wohnung 2</a>
+							<a class="dropdown-item" href="/wohnungen/details_03.html">Wohnung 3</a>
+							<a class="dropdown-item" href="/wohnungen/details_04.html">Wohnung 4</a>
+							<a class="dropdown-item" href="/wohnungen/details_05.html">Wohnung 5</a>
+							<a class="dropdown-item" href="/wohnungen/details_06.html">Wohnung 6</a>
+						</div>
+					</li>
+					<!-- <li class="nav-item"> <a class="nav-link" href="#">Der See</a> </li> -->
+					<li class="nav-item"> <a class="nav-link" href="events.html">Veranstaltungen</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="booking.php">Buchen</a> </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- intro Slider
+	================================================== -->
+	<div id="carouselExampleIndicators" class="carousel slide intro-carousel" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active" style="background-image: url('/img/intro.jpg')">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>Schön dass Sie hier sind</h3>
+				</div>
+			</div>
+			<!-- Slide One - Set the background image for this slide in the line below -->
+			<div class="carousel-item " style="background-image: url('/img/Winter.jpg')">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>Schön dass Sie hier sind</h3>
+				</div>
+			</div>
+
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+	<!-- Introform
+	================================================== -->
+	<div class="container">
+		<div class="row introform justify-content-center">
+			<form class="form-inline" action="booking.php" method="post">
+
+				<label for="checkin">Anreise</label>
+				<input type="text" class="form-control form-control-sm input-date" id="checkin" name="checkin">
+
+				<label for="checkout">Abreise</label>
+				<input type="text" class="form-control form-control-sm input-date" id="checkout" name="checkout">
+
+				<label for="personen">Personen</label>
+				<select class="form-control form-control-sm" id="personen" name="personen">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+
+				<button class="btn btn-primary">Anfragen</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- UBERUNS
+	================================================== -->
+	<section class="ueberuns-sec">
+		<a class="anchor" id="ueberuns"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2><small>&Uuml;ber uns</small>Familie<br>
+						Holzer</h2>
+				</div>
+				<div class="col-md-4">
+					<p>
+						Renate, Manfred und Emanuel heißen Sie herzlich willkommen im Ferienhaus Holzer.
+					</p>
+					<p>
+						Vor über 25 Jahren haben Renate und ihr Ehemann Manfred den Grundstein für ihr Lebenswerk in Egg am Faaker See gelegt. Wenn es auch oft anstrengende und entbehrungsreiche Zeiten waren, blicken sie mit Genugtuung auf all die Jahre und daraus entstandenen
+						Bekanntschaften zurück.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<p>
+						Manfred informiert seine Gäste immer gerne über Unternehmungsmöglichkeiten in Kärnten und kennt fast jeden Berg rund um den Faaker See. Renate liebt es ihre Gäste mit köstlichen, selbstgebackenen Kuchen und Kaffee zu verwöhnen.
+					</p>
+					<p>
+						Mit Emanuel wird nun die 2. Generation in den Familienbetrieb eingebunden, um das Ferienhaus in gewohnt hoher Qualität weiterzuführen.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TESTIMONIALS
+	================================================== -->
+	<section class="testimonials-sec">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="testimonials-slider">
+						<div class="testimonial">
+							<div class="content">
+								<p class="description">
+									<i>Außerordentlich herzliche Gastgeber! Großer Wohlfühlfaktor! Lage toll, Faaker See zu Fuß bequem erreichbar; Ferienwohnung qualitativ sehr hochwertig, sehr schön und mit viel Liebe zum Detail eingerichtet! Wir fahren seit 2011 jeden Sommer nach Kärnten - mit dem Ferienhaus Holzer haben wir heuer den Jackpot geknackt. Die bisher mit Abstand schönste und beste Unterkunft, in der wir in Kärnten Urlaub gemacht haben!!</i>
+								</p>
+								<h3 class="testimonial-title">
+		                            Sonja
+		                            <small>Österreich</small>
+		                        </h3>
+							</div>
+						</div>
+						<div class="testimonial">
+							<div class="content">
+								<p class="description">
+									<i>Die Gastgeber haben höchste Ansprüche an die Gastfreundschaft und so gestalten sich Unterkunft und die gesamte Unterbringung. Ein excellent geführtes Haus mit großem Komfort im Innen- und im Außenbereich gepaart mit außergewöhnlicher Liebenswürdigkeit machen einen Urlaub zu einem besonderen Erlebnis, das man in bester Erinnerung behält. Die Lage des Hauses bietet von einer Anhöhe herab schöne Aussichten auf den Faaker See und die Berge. Die Sauberkeit ist allerorten bemerkenswert. Die Gastgeber sind im Hintergrund ständig um das Wohlbefinden Ihrer Gäste bemüht und kümmern sich um jedes Detail. Einfach ein Wohlfühlhaus.</i>
+								</p>
+								<h3 class="testimonial-title">
+		                            Gerd
+		                            <small>Deutschland</small>
+		                        </h3>
+							</div>
+						</div>
+						<div class="testimonial">
+							<div class="content">
+								<p class="description">
+									<i>Die Freundlichkeit von Renate und Manfred ist vom ersten Moment total beeindruckend! Wir wurden absolut herzlich empfangen! Unser Urlaub war rundum perfekt! Das Apartment ist auch sehr schön und gepflegt! Wir hatten alles was wir brauchen und haben in den Betten sehr gut geschlafen. Es gibt absolut nichts auszusetzen! Wir kommen gerne wieder! Vielen Dank für die tollen Tage</i>
+								</p>
+								<h3 class="testimonial-title">
+		                            Nina
+		                            <small>Deutschland</small>
+		                        </h3>
+							</div>
+						</div>
+						<div class="testimonial">
+							<div class="content">
+								<p class="description">
+									<i>Sehr schöne Aussicht auf den Faakersee und in die Berge der Umgebung. Sehr nette und hilfsbereite Vermieter.</i>
+								</p>
+								<h3 class="testimonial-title">
+		                            Heinrich
+		                            <small>Österreich</small>
+		                        </h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- DASHAUS
+	================================================== -->
+	<section class="dashaus-sec parallax-section">
+		<a class="anchor" id="dashaus"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="heading text-md-center text-xs-center">
+						<h2>Das Ferienhaus</h2>
+					</div>
+				</div>
+				<div class="col-md-12">
+
+					<div class="row">
+						<div class="col-lg-3 text-sm-center service-block"> <i class="fa fa-binoculars" aria-hidden="true"></i>
+							<h3>Aussicht genießen</h3>
+							<p>Genießen Sie einen außergewöhnlichen Ausblick auf den Faaker See und das umliegende Bergpanorama</p>
+						</div>
+						<div class="col-lg-3 text-sm-center service-block"> <i class="fa fa-child" aria-hidden="true"></i>
+							<h3>Freier Seezugang</h3>
+							<p>Es erwarten Sie erfrischende Momente im türkisblauen Wasser des Faaker Sees bei freiem Seezugang</p>
+						</div>
+						<div class="col-lg-3 text-sm-center service-block"> <i class="fa fa-wifi" aria-hidden="true"></i>
+							<h3>Gratis W-Lan</h3>
+							<p>Im ganzen Haus steht Ihnen unser kostenloses W-Lan zur Verfügung</p>
+						</div>
+						<div class="col-lg-3 text-sm-center service-block"> <i class="fa fa-car" aria-hidden="true"></i>
+							<h3>Privatparkplatz</h3>
+							<p>Während Ihres Aufenthaltes stellen Sie ihr Fahrzeug auf einem privaten Parkplatz ab</p>
+						</div>
+
+						<div class="row hausblock">
+							<div class="col-md-4">
+								<h2>Das Haus</h2>
+							</div>
+							<div class="col-md-8">
+								<p>Unser Haus liegt auf einer kleinen Anhöhe, ca drei Gehminuten vom Faaker See entfernt. Sie haben kostenfreien Zutritt zum Faaker See wo hauseigene Sonnenschirme und Liegestühle am Strand für Sie bereit stehen.</p>
+								<p>In unserer Unterkunft erwarten Sie <b>sechs liebevoll und heimisch eingerichtete Apartments.</b></p>
+							</div>
+
+							<div class="col-md-4">
+								<h2>Garten & Terasse</h2>
+							</div>
+							<div class="col-md-8">
+								<p>Falls Sie einen ruhigen Tag einlegen wollen, erwartet Sie unser <b>großzügiger Außenbereich</b> mit diversen Liege- und Sitzmöglichkeiten.<br> Sollten Sie Lust auf eine Grillerei haben steht Ihnen nichts im Weg - sie können sich einen Grill bei
+									uns im Haus ausleihen.</p>
+								<p>Das Highlight stellt unsere Sonnenterrasse dar, welche Sie herzlich dazu einlädt ihren Abend bei einem gemütlichen Glas Wein ausklingen zu lassen.</p>
+								<p>Wir verfügen außerdem über einen absperrbaren Raum für Ihre Fahrräder.</p>
+							</div>
+
+							<div class="col-md-4">
+								<h2>Ausstattung</h2>
+							</div>
+							<div class="col-md-8">
+								<p>Alle unsere Apartments verfügen über eine Küche oder Küchenzeile, einen Essbereich, ein <b>modernes Bad</b> mit Dusche und WC, ein Wohnzimmer mit LCD-TV und ein seperates Schlafzimmer.<br> Fünf unserer Sechs Wohnungen sind mit einer ausziehbaren
+									Couch im Wohnzimmer ausgestattet, welche bei Bedarf 2 zusätzliche Schlafplätze bietet.</p>
+								<p>Sie haben in jedem Zimmer einen kostenlosen W-LAN Zugang.<br>Im Bad liegt ein Föhn, sowie Bade- und Handtücher bereit, welche auf Wunsch gewechselt werden. </p>
+								<p>Zudem verfügt <b>jedes Apartment</b> über einen Safe für Ihre Wertsachen und eine <b>eigene Terasse bzw. Balkon.</b> </p>
+							</div>
+						</div>
+
+						<!-- <div class="row">
+							<div class="col-md-12 text-justify dashausdescr">
+								<p>Unser Ferienhaus liegt in Egg am Faaker See, nur 400 m vom Faaker See entfernt, und bietet Apartments mit Blick auf den See sowie eine großzügige Sonnenterrasse und kostenloses W-Lan. Während Ihres Aufenthalts genießen Sie freien Zutritt zum Strandbereich.</p>
+
+								<p>Jedes Apartment ist mit einer Küche oder Küchenzeile, einem Essbereich und einem Bad mit Dusche und WC ausgestattet. Einige verfügen zudem über einen Balkon oder eine Terrasse. Handtücher und Bettwäsche liegen für Sie bereit.</p>
+
+								<p>Sie genießen kostenlosen Zugang zum Strand am Faaker See mit Liegenstühlen und Sonnenschirmen. Der Garten erwartet Sie ebenfalls mit Liegestühlen und Sonnenschirmen sowie einem Grillplatz. Entspannen Sie auch in der Gemeinschaftslounge. Eine Gepäckaufbewahrung und ein abschließbarer Fahrradraum sind ebenfalls vorhanden.</p>
+
+								<p>Auf Anfrage werden Ihnen jeden Morgen frische Brötchen geliefert. Das nächste Restaurant ist 50 m entfernt und ein Café sowie einen Supermarkt finden Sie im Umkreis von 100 m. Villach ist 6,5 km entfernt. Die Parkplätze nutzen Sie kostenfrei. </p>
+
+								<p>Wir sprechen Ihre Sprache!</p>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
+				<!-- <div class="col-md-4"> <img src="/img/haus_hochkant.png" class="img-fluid" /> </div> -->
+			</div>
+			<!-- /.row -->
+		</div>
+	</section>
+
+	<!-- WOHNUNGEN
+	================================================== -->
+	<section class="wohnungen-sec">
+		<a class="anchor" id="wohnungen"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="heading text-md-center text-xs-center">
+						<h2>Wohnungen</h2>
+					</div>
+				</div>
+				<div class="col-md-12 ">
+					<div class="bGImg">
+						<img src="/img/Wohnung01/Schlafzimmer.jpg" class="gallery blur" />
+						<div class="blur-titel">Maisonetteapartment<br>mit Balkon & Seeblick</div>
+						<div class="gridoverlay">
+							<div class="titel">Wohnung 01</div>
+							<div class="product_price"><span class="ab">ab </span><i>100 €</i></div>
+							<div class="text-center">
+								<div class="room_details">
+									ca 48m<sup>2</sup><br> Seeblick
+									<br> Balkon
+									<br> Maisonette
+									<br>
+								</div>
+								<a href="/wohnungen/details_01.html" class="btn btn-primary"><i class="fa fa-search"></i> Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="bGImg">
+						<img src="/img/Wohnung02/Kueche02.jpg" class="blur" />
+						<div class="blur-titel">Studioapartment<br>mit Balkon & Seeblick</div>
+						<div class="gridoverlay">
+							<div class="titel">Wohnung 02</div>
+							<div class="product_price"><span class="ab">ab </span><i>100 €</i></div>
+							<div class="text-center">
+								<div class="room_details">
+									ca 28m<sup>2</sup><br> Seeblick
+									<br> Balkon
+									<br>
+								</div>
+								<a href="#" class="btn btn-primary"><i class="fa fa-search"></i> Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="bGImg">
+						<img src="/img/Wohnung03/Schlafzimmer.jpg" class="blur" />
+						<div class="blur-titel">Maisonetteapartment<br>mit Balkon</div>
+						<div class="gridoverlay">
+							<div class="titel">Wohnung 03</div>
+							<div class="product_price"><span class="ab">ab </span><i>100 €</i></div>
+							<div class="text-center">
+								<div class="room_details">
+									ca 48m<sup>2</sup><br> Ostseite
+									<br> Balkon
+									<br> Maisonette
+									<br>
+								</div>
+								<a href="#" class="btn btn-primary"><i class="fa fa-search"></i> Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="bGImg">
+						<img src="/img/Wohnung04/Wohnung.jpg" class="blur" />
+						<div class="blur-titel">Maisonetteapartment<br>mit Balkon</div>
+						<div class="gridoverlay">
+							<div class="titel">Wohnung 04</div>
+							<div class="product_price"><span class="ab">ab </span><i>100 €</i></div>
+							<div class="text-center">
+								<div class="room_details">
+									ca 48m<sup>2</sup><br> Ostseite
+									<br> Balkon
+									<br> Maisonette
+									<br>
+								</div>
+								<a href="#" class="btn btn-primary"><i class="fa fa-search"></i> Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="bGImg">
+						<img src="/img/Wohnung05/WohnzimmerOhneTV.jpg" class="blur" />
+						<div class="blur-titel">Apartment<br>mit Terasse & Seeblick</div>
+						<div class="gridoverlay">
+							<div class="titel">Wohnung 05</div>
+							<div class="product_price"><span class="ab">ab </span><i>100 €</i></div>
+							<div class="text-center">
+								<div class="room_details">
+									ca 48m<sup>2</sup><br> Seeblick
+									<br> Terasse
+									<br>
+								</div>
+								<a href="#" class="btn btn-primary"><i class="fa fa-search"></i> Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="bGImg">
+						<img src="/img/Wohnung06/Wohnzimmer.jpg" class="blur" />
+						<div class="blur-titel">Barrierefreies Apartment<br>mit Terasse</div>
+						<div class="gridoverlay">
+							<div class="titel">Wohnung 06</div>
+							<div class="product_price"><span class="ab">ab </span><i>100 €</i></div>
+							<div class="text-center">
+								<div class="room_details">
+									ca 54m<sup>2</sup><br> Terasse
+									<br> Barrierefrei
+									<br>
+								</div>
+								<a href="#" class="btn btn-primary"><i class="fa fa-search"></i> Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER
+	================================================== -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-12">
+					<img src="/img/logo_white.png">
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<p>
+						Ferienhaus Holzer<br> Waubergweg 12b<br> A-9580 Drobollach<br>
+					</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<p>
+						<i class="fa fa-phone"></i>&nbsp; +43 425 4373 9<br>
+						<i class="fa fa-envelope"></i>&nbsp; <a href="mailto:info@ferienhaus-holzer.at">info@ferienhaus-holzer.at</a><br> &nbsp;
+						<br> made with <i class="fa fa-heart"></i> by <a href="http://webdesign3r.de" target="_blank">webdesign3r</a>
+					</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<i class="fa fa-sitemap"></i>&nbsp; <a href="#">Impressum</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scrollPosStyler.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/w3r.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/bootstrap-datepicker.de.min.js"></script>
+	<script>
+		$('.input-date').datepicker({
+			clearBtn: true,
+			todayHighlight: true,
+			language: 'de'
+		});
+	</script>
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
